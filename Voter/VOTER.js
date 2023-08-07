@@ -1,6 +1,6 @@
 import React from 'react';
 
-class VoterPROFILE extends React.Component {
+class Voter extends React.Component {
   constructor(props) {
     super(props);
 
@@ -8,7 +8,6 @@ class VoterPROFILE extends React.Component {
       V_ID: null,
       V_Password: null,
       V_Name: null,
-      V_Information: null,
     };
   }
 
@@ -16,27 +15,26 @@ class VoterPROFILE extends React.Component {
     // TODO implement here
   }
 
-  viewResult = () => {
+  operation1 = () => {
     // TODO implement here
   }
 
-  operation3 = () => {
+  viewResult = () => {
     // TODO implement here
   }
 
   render() {
     return (
       <div>
-
+    
         <p>Voter ID: {this.state.V_ID}</p>
         <p>Voter Name: {this.state.V_Name}</p>
-        <p>Voter Information: {this.state.V_Information}</p>
         <button onClick={this.castVote}>Cast Vote</button>
+        <button onClick={this.operation1}>Operation1</button>
         <button onClick={this.viewResult}>View Result</button>
-        <button onClick={this.operation3}>Operation 3</button>
       </div>
     );
   }
 }
 
-export default VoterPROFILE;
+export default Voter;
